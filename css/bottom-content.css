@@ -1,0 +1,45 @@
+.bottom-content {
+    overflow: hidden;
+    position: relative;
+    background: url(../images/main-content-bgimg-3.jfif) no-repeat;
+    background-size: cover;
+}
+
+hr {
+    border-color: aqua;
+}
+
+.bottom-content>.bottom-content-1>.row {
+    margin-top: 160px;
+}
+
+.bottom-content-2 {
+    margin-top: 100px;
+    height: 240px;
+    color: rgb(155, 161, 170);
+    background-color: rgba(0, 0, 0, 0.4);
+    vertical-align: middle;
+    font-family: "华文新魏_GBK";
+}
+
+.bottom-content-2>.bottom-content-row-1>div {
+    display: inline-block;
+}
+
+.bottom-content-2>.bottom-content-row-1>.logo {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.bottom-content-2>.bottom-content-row-1>.link,.tel{
+    margin-top: 30px;
+}
+
+.bottom-content-2>.bottom-content-row-2{
+    text-align: center;
+    margin: 20px auto;
+    height: 40px;
+}
+.bottom-content-2 a {
+    text-decoration: none;
+}

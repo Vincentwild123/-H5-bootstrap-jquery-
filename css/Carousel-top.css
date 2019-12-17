@@ -1,0 +1,13 @@
+.Carousel-top {
+    position: relative;
+}
+
+.Carousel-top img{
+    width: 100%;
+}
+
+.Carousel-top ol {
+    position: absolute;
+    top: 600px;
+    left: 100px;
+}

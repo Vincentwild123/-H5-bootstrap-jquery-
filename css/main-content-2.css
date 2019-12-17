@@ -1,0 +1,80 @@
+.main-content-2 {
+    font-family: "华文新魏_GBK";
+    background: url(../images/main-content-bgimg-2.jfif) no-repeat;
+    background-size: cover;
+}
+
+.content-row-3>.container>.row {
+    margin-top: -40px;
+}
+
+.content-row-3>.container>.row>.col-md-1 {
+    color: rgb(50, 8, 236);
+    box-shadow: 10px 10px 4px black ;
+    text-align: center;
+    border-radius: 4px;
+    background-color: white;
+    transform: translateY(50px);
+}
+
+.content-row-3>.container>.row>.col-md-6 {
+    position: relative;
+    transform: scale(1.1) translateX(80px);
+}
+
+.content-row-3>.container>.row>.col-md-5 {
+    position: relative;
+    transform: scale(0.7);
+}
+
+.content-row-3>.container>.row>div {
+    padding: 0;
+}
+.content-row-3>.container>.row>.col-md-6,.col-md-5{
+    border: 1px greenyellow solid;
+}
+
+
+.content-row-3>.container>.row>.col-md-6>img {
+    width: 100%;
+}
+
+.content-row-3>.container>.row .desc {
+    padding: 20px;
+    text-align: left;
+    position: absolute;
+    top: 280px;
+    left: 0;
+    width: 80%;
+    height: 200px;
+    background-color: rgb(248, 246, 241);
+}
+
+.content-row-3>.container>.row .desc>div {
+    border-radius: 5px;
+    text-align: center;
+    width: 130px;
+    height: 44px;
+    font-size: 30px;
+    color: rgb(248, 247, 245);
+    background-color: rgb(52, 7, 94);
+}
+
+
+
+.content-row-4{
+    margin-top: 100px;
+    border: 1px rgb(77, 4, 87) solid;
+    color: rgb(0, 0, 0);
+}
+
+.content-row-4>h3{
+    margin: 60px auto;
+    text-align: center;
+    font-size: 36px;
+    color:rgb(0, 0, 0);
+    font-weight: bold;
+}
+.content-row-4 p{
+    font-size: 18px;
+}

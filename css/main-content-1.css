@@ -1,0 +1,79 @@
+/* 主要内容一 */
+.main-content-1 {
+    background: url(../images/main-content-bgimg-1.jfif) no-repeat;
+    background-size: cover;
+}
+
+/* 标题栏大小 */
+.content-row-1>.container {
+    margin-top: -50px;
+    padding: 0;
+}
+
+.content-row-1>.container>.row {
+    overflow: hidden;
+    position: relative;
+    background: url(../images/main-content-bgimg-2.jfif) no-repeat ;
+    background-size: cover;
+    margin: 0;
+    height: 370px;
+}
+
+.content-row-1>.container>.row>div {
+    border: 1px rgb(11, 189, 212) solid ;
+    padding: 0;
+    height: 100%;
+}
+.content-row-1>.container>.row>.col-md-6 img{
+    width: 100%;
+    height: 100%;
+}
+.content-row-1>.container>.row>.col-md-6>.new-desc {
+    padding: 20px 6px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+    height: 168px;
+    background-color: wheat;
+}
+
+.content-row-1>.container>.row h4 {
+    transform: translate(110px, 50px);
+}
+
+.content-row-1>.container>.row>.col-md-3 img {
+    width: 100%;
+    height: 200px;
+}
+
+.content-row-1>.container>.row>.col-md-3>.new-desc {
+    padding: 20px;
+    background-color: wheat;
+    height: 170px;
+    width: 100%;
+}
+
+/* 第一行向上折叠 */
+.content-row-2 {
+    font-family: "华文新魏_GBK";
+    color: azure;
+}
+
+.content-row-2 h3 {
+    margin: 50px auto;
+    text-align: center;
+    font-size: 36px;
+    color: rgb(218, 253, 21);
+    font-weight: bold;
+}
+
+.content-row-2 button {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    transform: translateX(580px);
+}
+
+.content-row-2>.container>.row>div {
+    margin: auto 0;
+}

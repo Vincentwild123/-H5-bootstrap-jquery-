@@ -1,0 +1,420 @@
+<!-- 
+   项目名称：汕头大学工学院首页
+   作者：web小组
+   时间：2019.12.11
+   技术栈：jQuery + bootstrap + HTML5
+   备注：
+ -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>欢迎来到汕头大学工学院</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover">
+    <!-- 引入bootstrap css文件 -->
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" type="css/text" href="./jslibs/jquery/slick/slick.css">
+    <link rel="stylesheet" href="./jslibs/jquery/slick/slick-theme.css"> -->
+    <!-- 引入自定义css修订文件 -->
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/Carousel-top.css">
+    <link rel="stylesheet" href="./css/main-content-1.css">
+    <link rel="stylesheet" href="./css/navigator.css">
+    <link rel="stylesheet" href="./css/main-content-2.css">
+    <link rel="stylesheet" href="./css/bottom-content.css">
+    <link rel="stylesheet" href="./css/navbar-default.css">
+    <link rel="stylesheet" href="./css/sliderx.css">
+    <link rel="stylesheet" href="./css/button.css">
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <!-- 自定义类：navigator -->
+    <nav class="navbar navbar-fixed-top navbar-default navigator">
+        <!-- 学校logo -->
+        <div class="navbar-header">
+            <a href="#">
+                <div class="navbar-brand">
+                    <img src="./images/logo.png" alt="图片显示异常">
+                </div>
+            </a>
+        </div>
+        <!-- 右边的导航栏 -->
+        <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                    aria-expanded="false">院系介绍<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">计算机科学与技术系</a></li>
+                    <li><a href="#">机械电子工程系</a></li>
+                    <li><a href="#">电子信息工程系</a></li>
+                    <li><a href="#">土木与环境工程系</a></li>
+                    <li><a href="#">生物医学工程系</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                    aria-expanded="false">教学动态<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">培养方案</a></li>
+                    <li><a href="#">课程安排</a></li>
+                    <li><a href="#">课程介绍</a></li>
+                </ul>
+            </li>
+
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                    aria-expanded="false">学术科研<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">研究方向</a></li>
+                    <li><a href="#">科研机构</a></li>
+                    <li><a href="#">学术动态</a></li>
+                </ul>
+            </li>
+
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                    aria-expanded="false">学生风采<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">活动报道</a></li>
+                    <li><a href="#">海外交流</a></li>
+                    <li><a href="#">学生组织</a></li>
+                    <li><a href="#">品牌活动</a></li>
+                    <li><a href="#">党团建设</a></li>
+                    <li><a href="#">课外科技</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                    aria-expanded="false">招生工作<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">办学特色</a></li>
+                    <li><a href="#">往年录取情况</a></li>
+                    <li><a href="#">奖助学金</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                    aria-expanded="false">国际交流<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">新闻动态</a></li>
+                    <li><a href="#">国际项目</a></li>
+                    <li><a href="#">合作院校</a></li>
+                    <li><a href="#">相关政策</a></li>
+                    <li><a href="#">交流心得</a></li>
+                </ul>
+            </li>
+    </nav>
+    <!-- 以上为导航栏 -->
+    <!-- 。。。。。。。。。。。。。。。。。。。。。。 -->
+    <!-- 。。。。。。。。。。。。。。。。。。。。。。。。。。。。。 -->
+    <!-- 轮播图 自定义类：Carousel-->
+
+    <div class="Carousel-top container-fiuld">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2500">
+            <!-- 图片容器 -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="./images/header-bgimg-1.jpg" alt="图片显示异常">
+                </div>
+                <div class="item">
+                    <img src="./images/header-bgimg-2.jpg" alt="图片显示异常">
+                </div>
+                <div class="item">
+                    <img src="./images/header-bgimg-3.jpg" alt="图片显示异常">
+                </div>
+            </div>
+            <!-- 原点指示符 -->
+
+            <!-- 左右控制箭头 -->
+            <a href="#myCarousel" class="left carousel-control" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a href="#myCarousel" class="right carousel-control" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+        </div>
+    </div>
+
+
+    <!-- 以上为轮播图 -->
+    <!-- 。。。。。。。。。。。。。。。。。。。。。。。。。。。。。 -->
+    <!-- 以下为 中心部分内容
+1.重要事件三张图片（详见清华首页）
+2.新闻
+3.校园看点
+4.数据汕大
+-->
+    <div class="main-content-1">
+
+        <!-- 第一行 :重要事件-->
+        <div class="content-row-1">
+            <!-- container:包装容器 -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="./images/main-news-1.jpg" alt="图片显示异常">
+                        <div class="new-desc">
+                            <p><strong>年度广东省数字信号与图像处理技术重点实验室年会在汕头大学成功召开</strong></p>
+                            <h4><em>—— 2019.11.29</em></h4>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="./images/main-news-2.jpg" alt="图片显示异常">
+                        <div class="new-desc">
+                            <p><strong>执行校长王泉院士带队参加第十三届全国振动理论及应用学术会议</strong></p>
+                            <h4><em>—— 2019.11.11</h4></em>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="./images/main-news-3.jpg" alt="图片显示异常">
+                        <div class="new-desc">
+                            <p><strong>2019年度广东省数字信号与图像处理技术重点实验室年会在汕头大学成功召开</strong></p>
+                            <h4><em>—— 2019.11.29</em></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 第二行 ：新闻概要 -->
+        <div class="content-row-2">
+            <h3>—— 新闻 ——</h3>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 media">
+                        <div class="media-left media-top">
+                            <h1>29</h1>
+                            <p>2019.9</p>
+                        </div>
+                        <div class="media-body">
+                            <h4>练江水体综合治理与生态修复关键技术集成及示范项目</h4>
+                            <p>广东省重点领域研发计划“练江水体综合治理与生态修复关键技术集成及示范项目”第一次会议在汕头大学召开。该项目是2019年度广东省
+                                重点领域研发计划“污染防治与修复”重点专项项目的重中之重，总经费1000万…</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 media">
+                        <div class="media-left media-top">
+                            <h1>17</h1>
+                            <p>2019.9</p>
+                        </div>
+                        <div class="media-body">
+                            <h4>土木与环境工程系教师出席第十五届国际风工程会议</h4>
+                            <p>第十五届国际风工程会议(ICWE 15)于2019年9月1日至6日在北京市召开，会议由同济大学和北京交通大学主办，并得到了国家自然科学基金委、
+                                中国土木工程学会、土木工程防灾国家重点实验室等单位的协助支…
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 media">
+                        <div class="media-left media-top">
+                            <h1>17</h1>
+                            <p>2019.9</p>
+                        </div>
+                        <div class="media-body">
+                            <h4>沈水龙院长为土木与环境工程系研究生新生上“开学第一课” </h4>
+                            <p>作为土木与环境工程系研究生新生入学活动的一部分，9月8日下午，汕头大学工学院院长沈水龙教授在G301教室作题为“改变思维，抓住今日”的主题讲座。讲座由工学院土木与环境工程系吴鸣副教授主持，工学院
+                                土木与环境工程系系主任祝志文教授和58位土木与环境工程系硕士研究生新生参加了讲座…</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="draw">
+                点击查看更多新闻
+            </button>
+        </div>
+
+    </div>
+
+    <div class="main-content-2">
+
+        <!-- 第三行 ：校园看点 -->
+        <div class="content-row-3">
+            <div class="container">
+                <div class="row">
+                    <div style="word-wrap:break-word;font-size:50px" class="col-md-1">校园看点</div>
+                    <div class="col-md-6">
+                        <img src="./images/Campus-attractions-news-1.jpg" alt="">
+                        <div class="desc">
+                            <div>人才培养</div>
+                            <h2>卓越工程师培养计划</h2>
+                            <p>2010年6月，教育部联合中国工程院启动了“卓越工程师教育培养计划”，汕头大学工学院
+                                机械设计制造及其自动化专业入选“卓越工程师教育培养计划”首批 建设点。</p>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <img src="./images/Campus-attractions-news-2.jpg" alt="">
+                        <div class="desc">
+                            <div>海外交流</div>
+                            <h1>澳大利亚CDIO</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 第四行 ： 数据工学院 -->
+        <div class="content-row-4">
+            <h3>—— 数据工学院 ——</h3>
+            <div class="control-box">
+                <ul>
+                    <li class="prev">
+                        <img src="./images/left_02.png" alt="prev">
+                    </li>
+                    <li class="next">
+                        <img src="./images/right_02.png" alt="next">
+                    </li>
+                </ul>
+                <div class="bigbox">
+                    <div id="switcher">
+                        <div class="content_1">
+                            <div class="box">
+                                <div>
+                                    <img src="./images/data-01.png" alt="">
+                                </div>
+                                <div>
+                                    <h1><Strong>1985</Strong></h1>
+                                    <p><em>汕头大学工学院创办于1985年</em></p>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div>
+                                    <img src="./images/data-02.png" alt="">
+                                </div>
+                                <div>
+                                    <h1><Strong>40</Strong></h1>
+                                    <p><em>学院现有40个专业实验室</em></p>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div>
+                                    <img src="./images/data-03.png" alt="">
+                                </div>
+                                <div>
+                                    <h1><Strong>5414</Strong></h1>
+                                    <p><em>2017年我院毕业生平均薪酬5414元</em></p>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div>
+                                    <img src="./images/data-04.png" alt="">
+                                </div>
+                                <div>
+                                    <h1><Strong>243</Strong></h1>
+                                    <p><em>近5年来共获得国家和省级科研立项项目243项，总经费达5930多万元</em></p>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div>
+                                    <img src="./images/data-01.png" alt="">
+                                </div>
+                                <div>
+                                    <h1><Strong>11</Strong></h1>
+                                    <p><em>学院现有11个本科专业、11个硕士点</em></p>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div>
+                                    <img src="./images/data-02.png" alt="">
+                                </div>
+                                <div>
+                                    <h1><Strong>7</Strong></h1>
+                                    <p><em>7所国际合作院校</em></p>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div>
+                                    <img src="./images/data-03.png" alt="">
+                                </div>
+                                <div>
+                                    <h1><Strong>98</Strong></h1>
+                                    <p><em>近年来，学院毕业生就业率连续保持在98%以上</em></p>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div>
+                                    <img src="./images/data-04.png" alt="">
+                                </div>
+                                <div>
+                                    <h1><Strong>35</Strong></h1>
+                                    <p><em>教师中具有海外学习和工作经历者占35%</em></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    <!-- 底部两部分 三张图+灰色部分底部-->
+    <div class="bottom-content">
+        <!-- 底部的第一部分 招生信息栏-->
+
+        <div class="container bottom-content-1">
+            <div class="row">
+                <div class="col-md-4"><img src="./images/bottom-pic-1.png" alt=""></div>
+                <div class="col-md-4"><img src="./images/bottom-pic-2.jpg" alt=""></div>
+                <div class="col-md-4"><img src="./images/bottom-pic-1.png" alt=""></div>
+            </div>
+        </div>
+
+
+        <!-- 底部信息栏部分   -->
+        <div class="bottom-content-2">
+
+            <div class="bottom-content-row-1 row">
+
+                <div class="logo col-md-6">
+                    <img src="./images/logo.png" alt="图片显示异常">
+                </div>
+
+                <div class="tel col-md-3">
+                    <p>电话：86-754-8650-2153</p>
+                    <p> 传真：86-754-8290-2005</p>
+                    <p> 地址：广东省汕头市大学路243号</p>
+                </div>
+
+                <div class="link col-md-3">
+                    <p><a href="https://www.stu.edu.cn/">汕头大学</a></p>
+                    <p><a href="https://www.lksf.org/english-between-form-and-substance/">李嘉诚基金会 </a></p>
+                    <p><a href="https://xyh.stu.edu.cn/alumni/front/account/index.jsp ">校友会 </a></p>
+                    <p><a href="http://www.lib.stu.edu.cn/ ">汕头大学图书馆</a></p>
+                </div>
+
+            </div>
+
+            <hr>
+
+            <div class="bottom-content-row-2">
+                Copyright © 2019-2099 Department of computer science, Shantou University, All rights reserved.
+                版权所有 汕头大学计算机系 技术支持：不支持
+            </div>
+
+        </div>
+
+    </div>
+
+
+</body>
+
+<!-- 引入jquery -->
+<script src="./js/jquery-3.4.1.js"></script>
+<!-- 引入占位js插件  开发版用
+<script src="https://cdn.bootcss.com/holder/2.9.4/holder.js"></script> -->
+<!-- 引入bootstrap.js -->
+<script src="http://cdn.bootcss.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<!-- 数据汕大轮播图js -->
+<script src="./js/sliderx.js"></script>
+
+<script>
+    // 待添加
+</script>
+
+</html>
